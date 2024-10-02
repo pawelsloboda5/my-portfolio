@@ -6,8 +6,9 @@ import 'slick-carousel/slick/slick-theme.css'; // Import slick-carousel theme CS
 import mvp1_image1 from '../assets/mvp1_image1.png';
 import mvp1_image2 from '../assets/mvp1_image2.png';
 import mvp1_image3 from '../assets/mvp1_image3.png';
-import landing_image1 from '../assets/landing_image1.png';
-import landing_image2 from '../assets/landing_image2.png';
+import landing_image1 from '../assets/uiVs1.png';
+import landing_image2 from '../assets/uiVs2.png';
+import landing_image3 from '../assets/uiVs3.png';
 import mvp2_image1 from '../assets/mvp2_image1.png';
 import mvp2_image2 from '../assets/mvp2_image2.png';
 import mvp2_image3 from '../assets/mvp2_image3.png';
@@ -32,7 +33,7 @@ function Projects() {
 
 - Designed a responsive and visually appealing interface to attract potential users.
 - Provided information about the platform and its features.`,
-      images: [landing_image1, landing_image2],
+      images: [landing_image1, landing_image2, landing_image3],
       projectUrl: 'https://marketbump.io/landing',
       githubUrl: 'https://github.com/yourusername/marketbump-landing',
     },
@@ -58,10 +59,9 @@ function Projects() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    adaptiveHeight: false, // Set to false to prevent slider from adjusting height
+    adaptiveHeight: true, // Allow slider to adjust height based on content
   };
 
-  
   return (
     <section id="projects" className="py-16 bg-white dark:bg-gray-900">
       <div className="mx-auto px-4 max-w-screen-xl">
@@ -69,16 +69,16 @@ function Projects() {
         <div className="flex flex-wrap justify-center">
           {projects.map((project, index) => (
             <div key={index} className="w-full p-4">
-              <div className="bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg max-w-3xl mx-auto">
+              <div className="bg-gray-200 dark:bg-gray-800 rounded-lg shadow-lg max-w-3xl mx-auto overflow-hidden">
                 {/* Image Slider */}
-                <div className="h-64 md:h-80">
+                <div className="relative">
                   <Slider {...settings}>
                     {project.images.map((image, idx) => (
                       <div key={idx}>
                         <img
                           src={image}
                           alt={`${project.title} Screenshot ${idx + 1}`}
-                          className="w-full h-80 md:h-96 object-cover"
+                          className="w-full h-auto object-contain"
                         />
                       </div>
                     ))}
@@ -87,7 +87,9 @@ function Projects() {
                 {/* Content */}
                 <div className="p-8 text-left">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-sm mb-4 whitespace-pre-line">{project.description}</p>
+                  <p className="text-sm mb-4 whitespace-pre-line">
+                    {project.description}
+                  </p>
                   <div className="flex">
                     {project.projectUrl && project.projectUrl !== '#' && (
                       <a
