@@ -61,6 +61,7 @@ function Projects() {
     adaptiveHeight: false, // Set to false to prevent slider from adjusting height
   };
 
+  
   return (
     <section id="projects" className="py-16 bg-white dark:bg-gray-900">
       <div className="mx-auto px-4 max-w-screen-xl">
