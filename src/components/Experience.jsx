@@ -21,7 +21,7 @@ function Experience() {
     {
       role: 'Technical Account Manager Intern',
       company: 'Adobe',
-      duration: 'June 2023 - August 2023',
+      duration: 'May 2024 - August 2024',
       description: (
         <>
           Built a data pipeline using <strong>pandas</strong> to process over 1.5 million data points from 4 dashboards. Developed machine learning models using <strong>PyTorch</strong>, <strong>XGBoost</strong>, and <strong>RandomForest</strong> to predict customer engagement and proactive support signals. Engineered features such as Escalation Ratio, Support Case Impact, and Engagement Intensity. Created visualizations using <strong>Matplotlib</strong> and <strong>Seaborn</strong> to present results to stakeholders.
@@ -39,7 +39,7 @@ function Experience() {
     {
       role: 'Remote Tech Sales Intern',
       company: 'Adobe',
-      duration: 'June 2023 - August 2023',
+      duration: 'May 2023 - August 2023',
       description: (
         <>
           Developed and implemented an <strong>AI framework</strong> to automate and personalize email marketing campaigns, increasing engagement rates. Utilized tools like <strong>Outreach</strong>, <strong>Salesforce</strong>, <strong>Microsoft Teams</strong>, <strong>Slack</strong>, and <strong>LinkedIn Navigator</strong> for efficient communication and CRM. Conducted outbound calls to C-level executives, VPs, and Directors, effectively communicating value propositions and generating interest in Adobe Enterprise Software. Proficient in B2B sales techniques, including lead generation, prospecting, and client acquisition.
