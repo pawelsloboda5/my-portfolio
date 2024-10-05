@@ -15,7 +15,7 @@ function About() {
                 src={adobe_photo_professional_1}
                 alt="Your Name" 
                 className="w-full h-full object-cover object-center"
-                style={{ objectPosition: '50% 30%' }} // Adjust these values to fine-tune the focus
+                style={{ objectPosition: '50% 30%' }} // fine-tune the focus
               />
             </div>
           </div>
@@ -25,7 +25,7 @@ function About() {
               {/* Insert your summary here */}
               Hi, I'm Pawel Sloboda, a developer with a passion for creating beautiful and functional web applications, ML models and AI.
             </p>
-            {/* Add more details about your education and experience */}
+            {/*  details about your education and experience */}
           </div>
         </div>
       </div>
