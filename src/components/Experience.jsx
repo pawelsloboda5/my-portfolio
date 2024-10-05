@@ -15,6 +15,8 @@ import teamManagementLogo from '../assets/team_management.png';
 import communicationLogo from '../assets/communication.png';
 import adobeLogo from '../assets/adobe.png';
 import geekSquadLogo from '../assets/geek_squad.png';
+// Add a logo for WEB 3 if available
+import web3Logo from '../assets/web3_logo.png';  
 
 function Experience() {
   const experiences = [
@@ -70,7 +72,7 @@ function Experience() {
       ],
       companyLogo: geekSquadLogo,
     },
-    // Add more experiences as needed
+    
   ];
 
   return (
