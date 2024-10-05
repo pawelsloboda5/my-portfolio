@@ -21,6 +21,7 @@ function App() {
         <Projects />
         <Experience />
         <Contact />
+        <Analytics />
       </main>
       <Footer />
     </div>
