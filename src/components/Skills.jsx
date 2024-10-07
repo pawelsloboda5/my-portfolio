@@ -1,7 +1,7 @@
 // src/components/Skills.jsx
 import React from 'react';
-import { FaReact, FaNodeJs, FaPython, FaJava } from 'react-icons/fa';
-import { SiTailwindcss, SiMongodb } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaPython, FaJava, FaMobileAlt } from 'react-icons/fa';
+import { SiTailwindcss, SiMongodb, SiSqlite, SiTypescript, SiNextdotjs } from 'react-icons/si';
 
 function Skills() {
   return (
@@ -33,6 +33,19 @@ function Skills() {
           <div className="m-4">
             <FaJava className="text-6xl mx-auto mb-2 text-red-500" />
             <p>Java</p>
+          </div>
+          {/* New Skill Items */}
+          <div className="m-4">
+            <SiSqlite className="text-6xl mx-auto mb-2 text-blue-600" />
+            <p>SQLite</p>
+          </div>
+          <div className="m-4">
+            <SiTypescript className="text-6xl mx-auto mb-2 text-blue-600" />
+            <p>TypeScript</p>
+          </div>
+          <div className="m-4">
+            <SiNextdotjs className="text-6xl mx-auto mb-2 text-black" />
+            <p>Next.js</p>
           </div>
           {/* Add more skills as needed */}
         </div>

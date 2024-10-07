@@ -25,7 +25,7 @@ function Projects() {
 - Utilized Next.js for a framework and SEO-friendly frontend with dynamic routing and server-side rendering.`,
       images: [mvp1_image1, mvp1_image2, mvp1_image3],
       projectUrl: 'https://marketbump.io',
-      githubUrl: 'https://github.com/yourusername/marketbump-mvp1',
+      githubUrl: 'https://github.com/pawelsloboda5/marketBump-backend',
     },
     {
       title: 'MarketBump.io - Landing Page',
@@ -34,8 +34,8 @@ function Projects() {
 - Designed a responsive and visually appealing interface to attract potential users.
 - Provided information about the platform and its features.`,
       images: [landing_image1, landing_image2, landing_image3],
-      projectUrl: 'https://marketbump.io/landing',
-      githubUrl: 'https://github.com/yourusername/marketbump-landing',
+      projectUrl: 'https://marketbump.io',
+      githubUrl: 'https://github.com/pawelsloboda5/marketbump-front/tree/master',
     },
     {
       title: 'MarketBump.io - MVP 2',
@@ -46,8 +46,8 @@ function Projects() {
 - Improved frontend to display articles based on user's portfolio extracted from the screenshot.
 - Waiting to be deployed.`,
       images: [mvp2_image1, mvp2_image2, mvp2_image3],
-      projectUrl: '#',
-      githubUrl: 'https://github.com/yourusername/marketbump-mvp2',
+      projectUrl: 'https://marketbump.io',
+      githubUrl: 'https://github.com/pawelsloboda5/marketBump-backend',
     },
     // Add more projects if needed
   ];

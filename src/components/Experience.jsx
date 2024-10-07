@@ -24,11 +24,12 @@ function Experience() {
       role: 'Technical Account Manager Intern',
       company: 'Adobe',
       duration: 'May 2024 - August 2024',
-      description: (
-        <>
-          Built a data pipeline using <strong>pandas</strong> to process over 1.5 million data points from 4 dashboards. Developed machine learning models using <strong>PyTorch</strong>, <strong>XGBoost</strong>, and <strong>RandomForest</strong> to predict customer engagement and proactive support signals. Engineered features such as Escalation Ratio, Support Case Impact, and Engagement Intensity. Created visualizations using <strong>Matplotlib</strong> and <strong>Seaborn</strong> to present results to stakeholders.
-        </>
-      ),
+      description: [
+        'Built a data pipeline using Pandas to process over 1.5 million data points from 4 dashboards.',
+        'Developed machine learning models using PyTorch, XGBoost, and RandomForest to predict customer engagement and proactive support signals.',
+        'Engineered features such as Escalation Ratio, Support Case Impact, and Engagement Intensity.',
+        'Created visualizations using Matplotlib and Seaborn to present results to stakeholders.',
+      ],
       skills: [
         { name: 'Pandas', logo: pandasLogo },
         { name: 'PyTorch', logo: pytorchLogo },
@@ -42,11 +43,12 @@ function Experience() {
       role: 'Remote Tech Sales Intern',
       company: 'Adobe',
       duration: 'May 2023 - August 2023',
-      description: (
-        <>
-          Developed and implemented an <strong>AI framework</strong> to automate and personalize email marketing campaigns, increasing engagement rates. Utilized tools like <strong>Outreach</strong>, <strong>Salesforce</strong>, <strong>Microsoft Teams</strong>, <strong>Slack</strong>, and <strong>LinkedIn Navigator</strong> for efficient communication and CRM. Conducted outbound calls to C-level executives, VPs, and Directors, effectively communicating value propositions and generating interest in Adobe Enterprise Software. Proficient in B2B sales techniques, including lead generation, prospecting, and client acquisition.
-        </>
-      ),
+      description: [
+        'Developed and implemented an AI framework to automate and personalize email marketing campaigns, increasing engagement rates.',
+        'Utilized tools like Outreach, Salesforce, Microsoft Teams, Slack, and LinkedIn Navigator for efficient communication and CRM.',
+        'Conducted outbound calls to C-level executives, VPs, and Directors, effectively communicating value propositions and generating interest in Adobe Enterprise Software.',
+        'Proficient in B2B sales techniques, including lead generation, prospecting, and client acquisition.',
+      ],
       skills: [
         { name: 'Outreach', logo: outreachLogo },
         { name: 'Salesforce', logo: salesforceLogo },
@@ -60,11 +62,12 @@ function Experience() {
       role: 'Advanced Repair Agent',
       company: 'Geek Squad',
       duration: 'November 2023 - February 2024',
-      description: (
-        <>
-          Fostered customer satisfaction by establishing strong connections, understanding their needs, and delivering targeted solutions. Collaborated with the Geek Squad Manager to delegate tasks effectively, ensuring client support, diagnostics, repairs, and follow-ups were conducted efficiently and to a high standard. Ensured clear and timely communication of department goals and relevant company information to the team, promoting a well-informed and unified working environment. Addressed and resolved escalated <strong>customer service</strong> issues, upholding the brand's commitment to exceptional care.
-        </>
-      ),
+      description: [
+        'Fostered customer satisfaction by establishing strong connections, understanding their needs, and delivering targeted solutions.',
+        'Collaborated with the Geek Squad Manager to delegate tasks effectively, ensuring client support, diagnostics, repairs, and follow-ups were conducted efficiently and to a high standard.',
+        'Ensured clear and timely communication of department goals and relevant company information to the team, promoting a well-informed and unified working environment.',
+        'Addressed and resolved escalated customer service issues, upholding the brand\'s commitment to exceptional care.',
+      ],
       skills: [
         { name: 'Customer Service', logo: customerServiceLogo },
         { name: 'Team Management', logo: teamManagementLogo },
@@ -101,7 +104,14 @@ function Experience() {
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   {exp.duration}
                 </p>
-                <p className="mt-4">{exp.description}</p>
+                {/* Bullet Point Description */}
+                <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                  {exp.description.map((point, idx) => (
+                    <li key={idx} className="ml-4">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
                 {/* Skills Logos */}
                 <div className="flex flex-wrap mt-4">
                   {exp.skills.map((skill, idx) => (
