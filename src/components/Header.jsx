@@ -24,6 +24,7 @@ function Header() {
             <li><a href="#projects" className="hover:underline">Projects</a></li>
             <li><a href="#experience" className="hover:underline">Experience</a></li>
             <li><a href="#contact" className="hover:underline">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/1Zmn5VA7xDCxftKDOydrYiv8TBbjpbT0U/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="hover:underline">Resume</a></li>
           </ul>
         </nav>
 
@@ -85,6 +86,9 @@ function Header() {
             </li>
             <li>
               <a href="#contact" className="hover:underline" onClick={() => setMenuOpen(false)}>Contact</a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1Zmn5VA7xDCxftKDOydrYiv8TBbjpbT0U/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="hover:underline" onClick={() => setMenuOpen(false)}>Resume</a>
             </li>
           </ul>
         </nav>

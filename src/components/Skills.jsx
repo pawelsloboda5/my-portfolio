@@ -1,7 +1,7 @@
 // src/components/Skills.jsx
 import React from 'react';
-import { FaReact, FaNodeJs, FaPython, FaJava, FaMobileAlt } from 'react-icons/fa';
-import { SiTailwindcss, SiMongodb, SiSqlite, SiTypescript, SiNextdotjs } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaPython, FaJava } from 'react-icons/fa';
+import { SiTailwindcss, SiMongodb, SiSqlite, SiTypescript, SiNextdotjs, SiMicrosoftazure } from 'react-icons/si';
 
 function Skills() {
   return (
@@ -47,7 +47,22 @@ function Skills() {
             <SiNextdotjs className="text-6xl mx-auto mb-2 text-black" />
             <p>Next.js</p>
           </div>
-          {/* Add more skills as needed */}
+          {/* Azure */}
+          <div className="m-4">
+            <SiMicrosoftazure className="text-6xl mx-auto mb-2 text-blue-500" />
+            <p>Azure</p>
+          </div>
+          {/* Certifications */}
+        </div>
+
+        <h3 className="text-2xl font-bold mt-12 mb-4">Certifications</h3>
+        <div className="flex flex-wrap justify-center">
+          <div className="m-4 p-4 border rounded-lg shadow bg-white dark:bg-gray-800">
+            <p className="font-semibold">Azure AI Fundamentals (AI‑900)</p>
+          </div>
+          <div className="m-4 p-4 border rounded-lg shadow bg-white dark:bg-gray-800">
+            <p className="font-semibold">Azure Fundamentals (AZ‑900)</p>
+          </div>
         </div>
       </div>
     </section>

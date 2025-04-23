@@ -57,6 +57,115 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Desktop and larger screens */
+.revolving-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px; /* Adjust width for wider revolutions */
+  height: 400px; /* Adjust height for wider revolutions */
+  margin-top: -200px; /* Adjust margin for new size */
+  margin-left: -200px; /* Adjust margin for new size */
+  animation: rotate 40s infinite linear; /* Slower rotation */
+}
+
+.revolving-buttons .button {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.revolving-buttons .button-0 {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.revolving-buttons .button-1 {
+  top: 20%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.revolving-buttons .button-2 {
+  top: 80%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.revolving-buttons .button-3 {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.revolving-buttons .button-4 {
+  top: 80%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.revolving-buttons .button-5 {
+  top: 20%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Make sure each button maintains its orientation during rotation */
+.revolving-buttons .button {
+  transform: rotate(0deg);
+  animation: face-user 40s infinite linear; /* Slower rotation */
+}
+
+@keyframes face-user {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+}
+
+/* Add hover effect for more interactivity */
+.revolving-buttons .button:hover {
+  background: linear-gradient(135deg, #ff8c00, #6b00b6);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Mobile and smaller screens */
+@media (max-width: 768px) {
+  .revolving-buttons {
+    display: none;
+  }
+}/* Mobile and smaller screens */
+@media (max-width: 768px) {
+  .revolving-buttons {
+    display: none;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

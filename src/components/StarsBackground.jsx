@@ -1,4 +1,5 @@
 // src/components/StarsBackground.jsx
+// NOTE: This heavy 3‑D background component is currently **not** used in production to improve mobile performance.
 import React, { useRef, useMemo, useEffect, useState, useContext } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { ThemeContext } from './ThemeContext';
