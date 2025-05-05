@@ -1,10 +1,7 @@
 // src/components/Projects.jsx
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css'; // Import slick-carousel CSS
-import 'slick-carousel/slick/slick-theme.css'; // Import slick-carousel theme CSS
+import React, { useState, useEffect, useRef } from 'react';
+import { useInView } from 'framer-motion';
+import ProjectCard from './ProjectCard';
 import mvp1_image1 from '../assets/mvp1_image1.png';
 import mvp1_image2 from '../assets/mvp1_image2.png';
 import mvp1_image3 from '../assets/mvp1_image3.png';
@@ -25,6 +22,48 @@ import sie2 from '../assets/sie-wellness-2.png';
 
 function Projects() {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);
+  const [autoHoverIndex, setAutoHoverIndex] = useState(null);
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { margin: '-100px' }); // trigger a bit before fully in view
+
+  // Listen for custom event from ProjectGallery
+  useEffect(() => {
+    const handleOpenProject = (event) => {
+      const { index } = event.detail;
+      setSelectedProjectIndex(index);
+    };
+
+    document.addEventListener('openProject', handleOpenProject);
+    
+    return () => {
+      document.removeEventListener('openProject', handleOpenProject);
+    };
+  }, []);
+
+  // Trigger sequential auto-hover when section enters the viewport
+  useEffect(() => {
+    if (!isInView) {
+      // Reset auto-hover when not in view
+      setAutoHoverIndex(null);
+      return;
+    }
+
+    let current = 0;
+    setAutoHoverIndex(0);
+
+    const interval = setInterval(() => {
+      current += 1;
+      if (current >= projects.length) {
+        // Stop after highlighting all cards once
+        clearInterval(interval);
+        setAutoHoverIndex(null);
+      } else {
+        setAutoHoverIndex(current);
+      }
+    }, 4000); // 4 seconds per card (between 3-5 sec requested)
+
+    return () => clearInterval(interval);
+  }, [isInView]);
 
   const projects = [
     {
@@ -99,112 +138,20 @@ function Projects() {
     },
   ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    adaptiveHeight: true, // Allow slider to adjust height based on content
-  };
-
   return (
-    <section id="projects" className="py-16 bg-white dark:bg-gray-900">
+    <section id="projects" ref={sectionRef} className="py-16 bg-white dark:bg-gray-900">
       <div className="mx-auto px-4 max-w-screen-xl">
         <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
-        <div className="flex flex-wrap justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-start">
           {projects.map((project, index) => (
-            <div
+            <ProjectCard
               key={index}
-              className="w-full p-4 cursor-pointer"
-              onClick={() => setSelectedProjectIndex(selectedProjectIndex === index ? null : index)}
-            >
-              <div className="bg-gray-200 dark:bg-gray-800 rounded-lg shadow-lg max-w-3xl mx-auto overflow-hidden">
-                {/* Project Title and Summary */}
-                <div className="p-8 text-left hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-sm mb-2 whitespace-pre-line">{project.description.split('\n')[0]}</p>
-                  {/* Animated Arrow Icon on Hover */}
-                  <div className="text-center text-gray-600 dark:text-gray-400">
-                    {selectedProjectIndex === index ? null : (
-                      <motion.div
-                        initial={{ y: -10, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.3 }}
-                        className="inline-block mt-4"
-                      >
-                        <FiChevronDown />
-                      </motion.div>
-                    )}
-                  </div>
-                </div>
-                {/* Full Details (Slider + Description) */}
-                <AnimatePresence>
-                  {selectedProjectIndex === index && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.5 }}
-                      className="relative overflow-hidden"
-                    >
-                      {/* Image Slider */}
-                      <Slider {...settings}>
-                        {project.images.map((image, idx) => (
-                          <div key={idx}>
-                            <img
-                              src={image}
-                              alt={`${project.title} Screenshot ${idx + 1}`}
-                              className="w-full h-64 lg:h-80 object-cover"
-                              loading="lazy"
-                            />
-                          </div>
-                        ))}
-                      </Slider>
-                      {/* Content */}
-                      <div className="p-8 text-left">
-                        <p className="text-sm mb-4 whitespace-pre-line">{project.description}</p>
-                        <div className="flex">
-                          {project.projectUrl && project.projectUrl !== '#' && (
-                            <a
-                              href={project.projectUrl}
-                              className="text-blue-500 hover:underline mr-4"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              Live Demo
-                            </a>
-                          )}
-                          {project.githubUrl && (
-                            <a
-                              href={project.githubUrl}
-                              className="text-blue-500 hover:underline"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              GitHub
-                            </a>
-                          )}
-                        </div>
-                      </div>
-                      {/* Arrow pointing up to collapse */}
-                      <div className="text-center text-gray-600 dark:text-gray-400 mt-4">
-                        <motion.div
-                          initial={{ y: 10, opacity: 0 }}
-                          animate={{ y: 0, opacity: 1 }}
-                          exit={{ y: 10, opacity: 0 }}
-                          transition={{ duration: 0.3 }}
-                          className="inline-block"
-                        >
-                          <FiChevronUp />
-                        </motion.div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            </div>
+              project={project}
+              index={index}
+              selected={selectedProjectIndex === index}
+              onSelect={setSelectedProjectIndex}
+              autoHover={autoHoverIndex === index}
+            />
           ))}
         </div>
       </div>

@@ -178,3 +178,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Slick Carousel Custom Styles */
+.project-slider-container .slick-dots li button:before {
+  font-size: 12px; /* Make dots slightly larger */
+  color: #9ca3af; /* Gray color for dots */
+  opacity: 0.75;
+}
+
+.project-slider-container .slick-dots li.slick-active button:before {
+  color: #4f46e5; /* Indigo for active dot */
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

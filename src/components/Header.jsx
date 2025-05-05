@@ -9,7 +9,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-md z-50">
+    <header className="fixed top-0 left-0 right-0 backdrop-blur-md bg-white/70 dark:bg-gray-900/70 shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo or Name */}
         <div className="text-xl font-bold">
