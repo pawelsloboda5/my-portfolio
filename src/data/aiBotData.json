@@ -1,0 +1,136 @@
+{
+  "personalInfo": {
+    "name": "Pawel Sloboda",
+    "title": "Machine Learning Engineer & Software Developer",
+    "bio": "I build AI-powered and cloud-native solutions that elevate cybersecurity training and automate complex workflows.",
+    "aboutMe": "Hi, I'm Pawel Sloboda, a developer with a passion for creating beautiful and functional web applications, ML models and AI."
+  },
+  "skills": [
+    "React",
+    "Tailwind CSS",
+    "Node.js",
+    "MongoDB",
+    "Python",
+    "Java",
+    "SQLite",
+    "TypeScript",
+    "Next.js",
+    "Azure"
+  ],
+  "certifications": [
+    "Azure AI Fundamentals (AI-900)",
+    "Azure Fundamentals (AZ-900)"
+  ],
+  "projects": [
+    {
+      "title": "MarketBump.io - MVP 1",
+      "description": "Developed a full-stack web application for personalized stock market news and social interactions.\\n\\n- Built a backend API using Flask and MongoDB to store user data, portfolios, and news articles fetched from the Polygon.io API.\\n- Implemented a dynamic, personalized newsfeed based on user portfolios, likes, quotes, and favorites.\\n- Integrated social features allowing users to like, quote ('ReBump'), and favorite articles.\\n- Utilized Next.js for a framework and SEO-friendly frontend with dynamic routing and server-side rendering.",
+      "projectUrl": "https://marketbump.io",
+      "githubUrl": "https://github.com/pawelsloboda5/marketBump-backend"
+    },
+    {
+      "title": "MarketBump.io - Landing Page",
+      "description": "Created a landing page for MarketBump using React, Vite, and Tailwind CSS.\\n\\n- Designed a responsive and visually appealing interface to attract potential users.\\n- Provided information about the platform and its features.",
+      "projectUrl": "https://marketbump.io",
+      "githubUrl": "https://github.com/pawelsloboda5/marketbump-front/tree/master"
+    },
+    {
+      "title": "MarketBump.io - MVP 2",
+      "description": "Developed an enhanced version of MarketBump with new features.\\n\\n- Implemented OCR using a BERT model to extract stock tickers from screenshots (e.g., Robinhood portfolio).\\n- Built a backend using SQLite to store and retrieve articles related to extracted stock tickers.\\n- Improved frontend to display articles based on user's portfolio extracted from the screenshot.\\n- Waiting to be deployed.",
+      "projectUrl": "https://marketbump.io",
+      "githubUrl": "https://github.com/pawelsloboda5/marketBump-backend"
+    },
+    {
+      "title": "Player Detection Model - Real-time Object Detection at 30 FPS",
+      "description": "Developed and fine-tuned a YOLO-based model for real-time detection of player objects in a gaming environment, achieving robust performance metrics.\\n  \\n  - Leveraged CUDA and GPU acceleration for efficient model training and inference, ensuring real-time performance at 30 frames per second.\\n- Utilized a tech stack including Python, PyTorch, and Albumentations for data preprocessing, augmentation, and model fine-tuning.\\n- Achieved high precision (0.96131) and recall (0.87715), with mAP@50 (0.93558) and mAP@50-95 (0.71452) after extensive training over 237 epochs.\\n- Fine-tuned with a base confidence threshold of 0.7 and dynamically adjusted confidence for distant and partially occluded players.\\n- Model evaluation across 237 epochs showed consistent reduction in validation loss: \\n  - Box loss: 0.44047, Class loss: 0.46528, and Distribution Focal Loss (DFL): 0.9074.\\n- Integrated dynamic learning rate adjustments and data augmentation techniques to improve model robustness and detection accuracy under varying in-game conditions.",
+      "projectUrl": "https://github.com/pawelsloboda5/player-detection",
+      "githubUrl": "https://github.com/pawelsloboda5/player-detection"
+    },
+    {
+      "title": "Apicus.ai Automation Visualizer",
+      "description": "Built an AI-powered workflow designer for a no-code automation startup.\\n\\n- Implemented FastAPI backend with vector search (1M+ combinations) and sub-100 ms responses.\\n- Designed front-end visualizer allowing users to describe a workflow and instantly generate automation flows.\\n- Integrated ROI calculator to quantify automation impact and boost engagement 60%.",
+      "projectUrl": "https://apicus.ai",
+      "githubUrl": "#"
+    },
+    {
+      "title": "SIE Wellness Landing Page",
+      "description": "Developed responsive landing page for healthcare fintech startup.\\n\\n- Used React + Tailwind with Lighthouse 95+ mobile score.\\n- Features dynamic hero, feature grid, and bilingual waitlist CTAs.",
+      "projectUrl": "#",
+      "githubUrl": "#"
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Cybersecurity Engineer",
+      "company": "National Defense University (DoD)",
+      "duration": "Mar 2025 - Present",
+      "description": [
+        "Upgraded 80+ laptops from Windows 7 ➜ Windows 11 for DoD cyber-warfare simulations, including legacy VM setups (Win 2000, XP, Ubuntu).",
+        "Configured Kali Linux, Metasploit, Wireshark and automated .bat launch scripts, boosting lab readiness.",
+        "Built an on-prem Retrieval-Augmented-Generation bot integrated with SharePoint for rapid doc lookup."
+      ],
+      "skills": [
+        "Kali Linux",
+        "Metasploit",
+        "Wireshark"
+      ]
+    },
+    {
+      "role": "Technical Account Manager Intern",
+      "company": "Adobe",
+      "duration": "May 2024 - Aug 2024",
+      "description": [
+        "Ingested 1.5M+ data points from 4 dashboards into ML pipeline (Pandas).",
+        "Tuned PyTorch / XGBoost models to predict engagement, cutting processing time 40%.",
+        "Visualized insights with Matplotlib & Seaborn for exec reporting."
+      ],
+      "skills": [
+        "Pandas",
+        "PyTorch",
+        "XGBoost",
+        "Matplotlib",
+        "Seaborn"
+      ]
+    },
+    {
+      "role": "Remote Tech Sales Intern",
+      "company": "Adobe",
+      "duration": "May 2023 - August 2023",
+      "description": [
+        "Developed and implemented an AI framework to automate and personalize email marketing campaigns, increasing engagement rates.",
+        "Utilized tools like Outreach, Salesforce, Microsoft Teams, Slack, and LinkedIn Navigator for efficient communication and CRM.",
+        "Conducted outbound calls to C-level executives, VPs, and Directors, effectively communicating value propositions and generating interest in Adobe Enterprise Software.",
+        "Proficient in B2B sales techniques, including lead generation, prospecting, and client acquisition."
+      ],
+      "skills": [
+        "Outreach",
+        "Salesforce",
+        "Microsoft Teams",
+        "Slack",
+        "LinkedIn Navigator"
+      ]
+    },
+    {
+      "role": "Advanced Repair Agent",
+      "company": "Geek Squad",
+      "duration": "November 2023 - February 2024",
+      "description": [
+        "Fostered customer satisfaction by establishing strong connections, understanding their needs, and delivering targeted solutions.",
+        "Collaborated with the Geek Squad Manager to delegate tasks effectively, ensuring client support, diagnostics, repairs, and follow-ups were conducted efficiently and to a high standard.",
+        "Ensured clear and timely communication of department goals and relevant company information to the team, promoting a well-informed and unified working environment.",
+        "Addressed and resolved escalated customer service issues, upholding the brand's commitment to exceptional care."
+      ],
+      "skills": [
+        "Customer Service",
+        "Team Management",
+        "Communication"
+      ]
+    }
+  ],
+  "contact": {
+    "email": "pawelsloboda5@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/pawel-sloboda-383181216/",
+    "github": "https://github.com/pawelsloboda5",
+    "resume": "https://drive.google.com/file/d/1Zmn5VA7xDCxftKDOydrYiv8TBbjpbT0U/view?usp=drive_link"
+  }
+} 

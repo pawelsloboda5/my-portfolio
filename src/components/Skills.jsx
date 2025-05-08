@@ -5,7 +5,7 @@ import { SiTailwindcss, SiMongodb, SiSqlite, SiTypescript, SiNextdotjs, SiMicros
 
 function Skills() {
   return (
-    <section id="skills" className="py-16 bg-gray-100 dark:bg-gray-800">
+    <section id="skills" className="py-16 bg-gray-100 dark:bg-gray-800 min-h-[50vh]">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-6">Skills</h2>
         <div className="flex flex-wrap justify-center space-x-4">

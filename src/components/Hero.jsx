@@ -17,8 +17,9 @@ function Hero() {
         />
       </div>
 
-      <div className="max-w-screen-xl mx-auto px-4 flex flex-col">
-        {/* Hero Content - reduced height */}
+      {/* CHANGED: This div now controls overall screen height and vertical centering */}
+      <div className="max-w-screen-xl mx-auto px-4 flex flex-col justify-center min-h-screen py-8 md:py-12">
+        {/* Hero Content - height adjusted, padding changed */}
         <div 
           id="hero"
           className="flex flex-col items-center justify-center text-white pt-16 pb-8 min-h-[70vh]"
@@ -65,12 +66,13 @@ function Hero() {
           </motion.div>
         </div>
 
-        {/* Project Gallery - visibly connected to the hero section */}
+        {/* Project Gallery - padding adjusted */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="w-full pb-12"
+          // CHANGED: Adjusted padding
+          className="w-full pt-6 pb-8 md:pt-8 md:pb-12"
         >
           <div className="max-w-screen-xl mx-auto">
             <div className="flex justify-between items-center mb-4">
