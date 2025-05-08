@@ -6,7 +6,7 @@ function About() {
   return (
     <section id="about" className="py-16 bg-white dark:bg-gray-900 min-h-[50vh]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6">About Me</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">About Me</h2>
         <div className="flex flex-col md:flex-row items-center">
           {/* Image or Illustration */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
@@ -21,7 +21,7 @@ function About() {
           </div>
           {/* Text Content */}
           <div className="w-full md:w-2/3 md:pl-6">
-            <p className="mb-4">
+            <p className="text-base md:text-lg lg:text-xl mb-4">
               {/* Insert your summary here */}
               Hi, I'm Pawel Sloboda, a developer with a passion for creating Innovative and Functional web applications, ML models and AI solutions.
             </p>

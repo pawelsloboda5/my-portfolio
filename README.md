@@ -1,5 +1,7 @@
 # Pawel Sloboda – Interactive Portfolio
 
+PUBLIC URL: pstech.
+
 A modern **React + Vite** personal-portfolio that demonstrates my Machine-Learning and Software-Engineering skill-set.  It ships with:
 
 * ⚡ Lightning-fast static front-end (React 18, Vite, Tailwind CSS, Framer-Motion)
