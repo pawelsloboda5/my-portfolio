@@ -1,6 +1,6 @@
 # Pawel Sloboda – Interactive Portfolio
 
-PUBLIC URL: pstech.
+## PUBLIC URL: https://www.pstech.website/
 
 A modern **React + Vite** personal-portfolio that demonstrates my Machine-Learning and Software-Engineering skill-set.  It ships with:
 
