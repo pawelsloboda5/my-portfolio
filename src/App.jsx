@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Blog from './components/Blog';
 import Footer from './components/Footer';
 import AIChatbot from './components/AIChatbot';
 import { Analytics } from "@vercel/analytics/react"
@@ -22,6 +23,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Blog />
         <Contact />
         <Analytics />
       </main>
