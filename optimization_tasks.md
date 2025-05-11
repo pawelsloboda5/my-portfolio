@@ -12,4 +12,5 @@
 - [x] Inject JSON-LD structured data (Person & BlogPosting)
 - [x] Generate & publish sitemap.xml during build
 - [x] Enable/verify CSS code splitting in Vite config
-- [x] Lazy-load OpenAI SDK only after first chat interaction (not imported on initial load) 
+- [x] Lazy-load OpenAI SDK only after first chat interaction (not imported on initial load)
+- [ ] Investigate WebP asset pipeline – current PNG-only images restored to prevent blank images 

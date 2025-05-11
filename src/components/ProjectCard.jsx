@@ -83,7 +83,6 @@ function ProjectCard({ project, index, selected, onSelect, autoHover = false }) 
         {/* Cover Image */}
         <img
           src={project.images[0]}
-          srcSet={`${project.images[0].replace(/\.(png|jpg|jpeg)$/, '.webp')} 1x, ${project.images[0]} 2x`}
           width="640"
           height="360"
           alt={`${project.title} cover`}
@@ -120,7 +119,6 @@ function ProjectCard({ project, index, selected, onSelect, autoHover = false }) 
                   <div key={idx}>
                     <img
                       src={img}
-                      srcSet={`${img.replace(/\.(png|jpg|jpeg)$/, '.webp')} 1x, ${img} 2x`}
                       width="800"
                       height="450"
                       alt={`${project.title} screenshot ${idx + 1}`}
