@@ -14,8 +14,8 @@ function About() {
             <div className="w-64 h-64 mx-auto overflow-hidden rounded-full">
               <img 
                 src={adobe_photo_professional_1}
-                width="256"
-                height="256"
+                width="512"
+                height="512"
                 alt="Your portrait"
                 className="w-full h-full object-cover object-center"
                 style={{ objectPosition: '50% 30%' }} // fine-tune the focus
