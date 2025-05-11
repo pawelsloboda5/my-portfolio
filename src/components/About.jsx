@@ -1,6 +1,7 @@
 // src/components/About.jsx
 import React from 'react';
 import adobe_photo_professional_1 from '../assets/adobe_photo_professional_1.png';
+import aiData from '../data/aiBotData.json';
 
 function About() {
   return (
@@ -23,7 +24,7 @@ function About() {
           <div className="w-full md:w-2/3 md:pl-6">
             <p className="text-base md:text-lg lg:text-xl mb-4">
               {/* Insert your summary here */}
-              Hi, I'm Pawel Sloboda, a developer with a passion for creating Innovative and Functional web applications, ML models and AI solutions.
+              {aiData.personalInfo.aboutMe}
             </p>
             {/*  details about your education and experience */}
           </div>

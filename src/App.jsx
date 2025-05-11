@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
 import AIChatbot from './components/AIChatbot';
+import OldGamesGallery from './components/OldGamesGallery';
 import { Analytics } from "@vercel/analytics/react"
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
+        <OldGamesGallery />
         <Blog />
         <Contact />
         <Analytics />

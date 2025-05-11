@@ -1,6 +1,7 @@
 // src/components/Hero.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import aiData from '../data/aiBotData.json';
 // Import directly using the full path to be safe
 import meteorGifPath from '../assets/meteor-gif-shower.gif';
 import ProjectGallery from './ProjectGallery';
@@ -39,7 +40,7 @@ function Hero() {
 
             {/* Short bio */}
             <p className="max-w-xl mx-auto text-base sm:text-lg opacity-90 mb-8 backdrop-blur-md bg-black/30 rounded-lg py-4 px-6">
-              I build AI-powered and cloud-native solutions that elevate cybersecurity training and automate complex workflows.
+              {aiData.personalInfo.bio}
             </p>
 
             {/* CTA Buttons */}

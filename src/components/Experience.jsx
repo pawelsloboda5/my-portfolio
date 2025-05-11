@@ -41,7 +41,8 @@ function Experience() {
       description: [
         'Upgraded 80+ laptops from Windows 7 ➜ Windows 11 for DoD cyber‑warfare simulations, including legacy VM setups (Win 2000, XP, Ubuntu).',
         'Configured Kali Linux, Metasploit, Wireshark and automated .bat launch scripts, boosting lab readiness.',
-        'Built an on‑prem Retrieval‑Augmented‑Generation bot integrated with SharePoint for rapid doc lookup.',
+        'Built an on-prem Retrieval-Augmented-Generation bot integrated with SharePoint for rapid doc lookup.',
+        'Developed a LinkedIn scrape bot to cross-reference 17k graduates and extracted 10k alumni profiles for the NDU network.',
       ],
       skills: [
         { name: 'Kali Linux', logo: web3Logo },

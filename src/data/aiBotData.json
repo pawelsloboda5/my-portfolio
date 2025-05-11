@@ -2,8 +2,8 @@
   "personalInfo": {
     "name": "Pawel Sloboda",
     "title": "Machine Learning Engineer & Software Developer",
-    "bio": "I build AI-powered and cloud-native solutions that elevate cybersecurity training and automate complex workflows.",
-    "aboutMe": "Hi, I'm Pawel Sloboda, a developer with a passion for creating beautiful and functional web applications, ML models and AI."
+    "bio": "I'm a lifelong builder who published my first browser games to Kongregate when I was 12 and have been experimenting ever since – today I design AI-powered, cloud-native systems that automate complex workflows and elevate cyber-training.",
+    "aboutMe": "Hi, I'm Pawel Sloboda. I wrote my first lines of code at ten, hacking together Scratch projects before graduating to Stencyl and vanilla HTML5/JavaScript. As a teenager I shipped several browser games to Kongregate that gathered tens-of-thousands of plays and ran modded servers for Rust and Unturned. After a football detour I returned to full-time coding in 2022 and have since built 9+ production-grade projects, freelanced for clients, and delivered MVPs that earned startups thousands in Azure credits."
   },
   "skills": [
     "React",
@@ -15,7 +15,19 @@
     "SQLite",
     "TypeScript",
     "Next.js",
-    "Azure"
+    "Azure",
+    "FastAPI",
+    "Docker",
+    "GitHub Actions",
+    "OpenAI",
+    "Azure OpenAI",
+    "Azure Cosmos DB",
+    "Azure Functions",
+    "Azure App Services",
+    "Azure Storage",
+    "Azure Key Vault",
+    "Azure Blob Storage"
+    
   ],
   "certifications": [
     "Azure AI Fundamentals (AI-900)",
@@ -42,19 +54,121 @@
     },
     {
       "title": "Player Detection Model - Real-time Object Detection at 30 FPS",
-      "description": "Developed and fine-tuned a YOLO-based model for real-time detection of player objects in a gaming environment, achieving robust performance metrics.\\n  \\n  - Leveraged CUDA and GPU acceleration for efficient model training and inference, ensuring real-time performance at 30 frames per second.\\n- Utilized a tech stack including Python, PyTorch, and Albumentations for data preprocessing, augmentation, and model fine-tuning.\\n- Achieved high precision (0.96131) and recall (0.87715), with mAP@50 (0.93558) and mAP@50-95 (0.71452) after extensive training over 237 epochs.\\n- Fine-tuned with a base confidence threshold of 0.7 and dynamically adjusted confidence for distant and partially occluded players.\\n- Model evaluation across 237 epochs showed consistent reduction in validation loss: \\n  - Box loss: 0.44047, Class loss: 0.46528, and Distribution Focal Loss (DFL): 0.9074.\\n- Integrated dynamic learning rate adjustments and data augmentation techniques to improve model robustness and detection accuracy under varying in-game conditions.",
-      "projectUrl": "https://github.com/pawelsloboda5/player-detection",
-      "githubUrl": "https://github.com/pawelsloboda5/player-detection"
+      "description": "Developed a production‑grade real‑time player‑detection system that sustains **30 FPS** on 1080p gameplay footage by fine‑tuning Ultralytics YOLOv8‑s on 42 k annotated frames from competitive FPS recordings.\n\n- Leveraged **CUDA 11.8 / cuDNN 8.9** on an **RTX 3090** for accelerated training and half‑precision (FP16) inference, reducing latency to 18 ms per frame.\n- Training pipeline built in **Python 3.11**, **PyTorch 2.2**, **Albumentations**, and custom Mosaic + HSV augmentations, boosting robustness under variable lighting.\n- Achieved **mAP@50 0.9356**, **mAP@50‑95 0.7145**, **precision 0.9613**, **recall 0.8772** after 237 epochs with a cosine‑annealed LR scheduler and label‑smoothing.\n- Exported the model to **ONNX** and **TensorRT** for cross‑platform deployment; integrated **OpenCV 4.9** DNN backend for video decode & overlay.\n- Implemented adaptive confidence gating: 0.7 base threshold with dynamic decay for distant/occluded players, improving true‑positive rate by 4 pp.\n- Packaged a CLI (script.py) that streams detections from webcam, video, or RTSP; includes GPU‑capability probe (cudeCheck.py) and YAML‑driven config.\n- Repository ships reproducible training scripts, dataset YAML, pre‑trained weights, and benchmarking notebooks for end‑to‑end transparency.",
+      "skills": [
+      "Python 3.11",
+      "PyTorch 2.2",
+      "Ultralytics YOLOv8-s",
+      "CUDA 11.8",
+      "cuDNN 8.9",
+      "ONNX",
+      "TensorRT",
+      "OpenCV 4.9",
+      "Albumentations",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "YAML",
+      "Git",
+      "GitHub Actions",
+      "Virtualenv",
+      "Jupyter Notebooks",
+      "Real‑Time Video Streaming",
+      "GPUs (NVIDIA RTX 3090)",
+      "Model Quantization & Compression"
+    ],
+      "projectUrl": "https://github.com/pawelsloboda5/rust-YOLOv8-PlayerDetection",
+      "githubUrl": "https://github.com/pawelsloboda5/rust-YOLOv8-PlayerDetection"
     },
     {
-      "title": "Apicus.ai Automation Visualizer",
-      "description": "Built an AI-powered workflow designer for a no-code automation startup.\\n\\n- Implemented FastAPI backend with vector search (1M+ combinations) and sub-100 ms responses.\\n- Designed front-end visualizer allowing users to describe a workflow and instantly generate automation flows.\\n- Integrated ROI calculator to quantify automation impact and boost engagement 60%.",
+      "title": "Apicus.ai Automation Visualizer & Agent Platform",
+      "description": "End-to-end SaaS MVP that turns natural-language process descriptions into draft, no-code automations.\n\n- **Backend**: Architected Python micro-services in FastAPI; integrated Azure OpenAI (function calling) + IVF vector search over 1 M+ embeddings in Azure Cosmos DB / MongoDB for <100 ms semantic lookup.\n- **AI Agents**: Implemented Process Extractor & Automation Builder agents with Pydantic-typed schemas, dynamic model routing, and parallel batch pipelines (≈70 % faster than baseline).\n- **Frontend**: Designed an interactive React Flow canvas (overview / detailed / hybrid modes, collapsible parent nodes, mini-map, custom edges) with Zustand state, TypeScript, and Tailwind CSS.\n- **UX Enhancements**: Added ROI calculator, pricing sidebar, tool-belt widgets, real-time node expansion, and keyboard-driven zoom/pan controls—boosting user engagement by 60 % and cutting manual workflow mapping time 10×.\n- **Dev Ops**: Containerised with Docker, CI/CD via GitHub Actions, deployed to Azure Container Apps; IaC with Terraform.\n",
       "projectUrl": "https://apicus.ai",
-      "githubUrl": "#"
+      "githubUrl": "#",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "Pydantic",
+        "Async Azure OpenAI SDK",
+        "OpenAI Function Calling",
+        "Vector Search (Cosmos DB / MongoDB)",
+        "MongoDB",
+        "React",
+        "TypeScript",
+        "React Flow",
+        "Zustand",
+        "Tailwind CSS",
+        "React Icons",
+        "Vite",
+        "Docker",
+        "GitHub Actions",
+        "Azure Container Apps",
+        "Terraform"
+      ]
     },
     {
-      "title": "SIE Wellness Landing Page",
-      "description": "Developed responsive landing page for healthcare fintech startup.\\n\\n- Used React + Tailwind with Lighthouse 95+ mobile score.\\n- Features dynamic hero, feature grid, and bilingual waitlist CTAs.",
+      "title": "SIE Wellness: AI-Powered Holistic Health Platform",
+      "description": "Developed **SIE Wellness**, a Next.js 15 and React 19 web application featuring AI-driven chat functionalities tailored for prospective patients and healthcare providers. The platform provides separate landing pages and user journeys for general visitors, patients seeking holistic wellness advice, and providers looking to join the network.\n\n- Implemented a sophisticated **AI chat interface** for patients, leveraging **OpenAI (GPT models via @ai-sdk/openai)** for personalized wellness recommendations. Patient intake data and chat history are stored locally using **Dexie.js** (IndexedDB wrapper).\n- Engineered a two-step AI response processing system: the primary AI call generates content with markdown links, and a secondary, lightweight **regex-based API endpoint (`/api/extract-links`)** efficiently parses these links for display as clickable sources, minimizing LLM calls.\n- Built with **Next.js App Router**, utilizing **React Server Components** and TypeScript for a modern, type-safe codebase. Styling is achieved with **Tailwind CSS v4** and the **shadcn/ui** component library, enhanced with **Lucide icons** and **Framer Motion** for animations.\n- Features distinct API routes for AI interactions (`/api/chat`) and utility functions. The frontend captures user input through forms (validated with **Zod**) and manages state with React.\n- The project structure includes separate pages for different user segments (`/patient`, `/provider`) and leverages shared components for UI consistency. Likely deployed on **Vercel** (indicated by `@vercel/analytics`).",
+      "projectUrl": "https://www.sie2.com/patient",
+      "githubUrl": "https://github.com/pawelsloboda5/sie-wellness",
+      "skills": [
+        "Next.js 15",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "shadcn/ui",
+        "OpenAI API",
+        "@ai-sdk/openai",
+        "@ai-sdk/react",
+        "Dexie.js (IndexedDB)",
+        "React Server Components",
+        "Node.js",
+        "API Development (Next.js Route Handlers)",
+        "Zod (Schema Validation)",
+        "Framer Motion",
+        "Lucide Icons",
+        "Tailwind CSS",
+        "Git",
+        "Vercel",
+        "HTML5",
+        "CSS3",
+        "JavaScript (ES6+)",
+        "Responsive Web Design",
+        "AI Chatbots",
+        "Local Storage Solutions"
+      ]
+    },
+    {
+      "title": "San Francisco CalWORKs Housing Affordability & Eligibility Analysis",
+      "description": "Led a data-driven policy study assessing **CalWORKs** eligibility against regional housing affordability across California, with a deep dive into San Francisco — insights presented to **10 program stakeholders**.\n\n- Ingested **2022 ACS PUMS** micro-data (167k households / 391k persons) via **Census API**, then pipelined ETL using **Pandas**, **Polars**, and **NumPy**, completing full state-wide crunch in 30s on an M2 Pro dev machine.\n- Geo-joined households to **PUMA** boundaries using **GeoPandas** and **Shapely**, enabling side-by-side metrics for San Francisco's 4,479 sampled households.\n- Engineered 45+ features (income per adult, housing-cost-burden ratio, MBSAC threshold overages, SNAP participation, work status) and validated definitions against CalWORKs regulatory criteria.\n- Built a modular analytics package (PEP 517 **pyproject.toml**, unit-tested with **PyTest** & **Coverage.py**, CI via **GitHub Actions**) and published Docker image for reproducible runs.\n- Surfaced insights with interactive **Plotly** dashboards (income funnels, eligibility heatmaps, household treemaps) and exported static **Matplotlib/Seaborn** figures for reports.\n- Key findings: SF eligibility rate 25.2% vs state 27.7%; median monthly income SF $8.3k vs state $5.9k; housing cost burden remains 1.41× higher in SF; visual heatmaps reveal eligibility gaps concentrated in 1-person households.\n- Delivered 20-slide stakeholder deck and Q&A session; recommendations influenced subsequent budget discussion on subsidy thresholds.",
+      "projectUrl": "https://github.com/pawelsloboda5/calworks-analysis",
+      "githubUrl": "https://github.com/pawelsloboda5/calworks-analysis",
+      "skills": [
+        "Python 3.11",
+        "Pandas",
+        "Polars",
+        "NumPy",
+        "GeoPandas",
+        "Shapely",
+        "Plotly",
+        "Dash",
+        "Matplotlib",
+        "Seaborn",
+        "Scikit‑learn",
+        "US Census ACS PUMS",
+        "Docker",
+        "PyTest",
+        "GitHub Actions",
+        "YAML Config",
+        "Data Visualisation",
+        "ETL Pipeline",
+        "Public Policy Analytics"
+      ]
+    },
+    {
+      "title": "Early Kongregate Games (2012-2014)",
+      "description": "A collection of my very first browser games built in HTML5/JavaScript and Stencyl and published to Kongregate during my early teens.\n\nNotable releases include Castle Idle (incremental empire builder), Idle Walk (endless runner), and Warrior's Battle (click-based RPG). Together they amassed tens-of-thousands of plays and seeded my passion for game development.",
+      "images": ["castleidle.png", "idlewalk.png", "warriorsbattle1.png", "warriorsbattle2.png"],
       "projectUrl": "#",
       "githubUrl": "#"
     }
@@ -67,12 +181,23 @@
       "description": [
         "Upgraded 80+ laptops from Windows 7 ➜ Windows 11 for DoD cyber-warfare simulations, including legacy VM setups (Win 2000, XP, Ubuntu).",
         "Configured Kali Linux, Metasploit, Wireshark and automated .bat launch scripts, boosting lab readiness.",
-        "Built an on-prem Retrieval-Augmented-Generation bot integrated with SharePoint for rapid doc lookup."
+        "Built an on-prem Retrieval-Augmented-Generation bot integrated with SharePoint for rapid doc lookup.",
+        "Developed a LinkedIn scrape bot to cross-reference 17k graduates from 2014 till now and successfully extracted 10k alumni and their information for NDU's alumni network."
       ],
       "skills": [
         "Kali Linux",
         "Metasploit",
-        "Wireshark"
+        "Wireshark",
+        "SharePoint",
+        "Retrieval-Augmented-Generation",
+        "Python",
+        "Docker",
+        "GitHub Actions",
+        "Web Scraping",
+        "Selenium",
+        "BeautifulSoup",
+        "Pandas",
+        "NumPy"
       ]
     },
     {
@@ -107,7 +232,11 @@
         "Salesforce",
         "Microsoft Teams",
         "Slack",
-        "LinkedIn Navigator"
+        "LinkedIn Navigator",
+        "B2B Sales",
+        "Lead Generation",
+        "Prospecting",
+        "Client Acquisition"
       ]
     },
     {
@@ -123,7 +252,13 @@
       "skills": [
         "Customer Service",
         "Team Management",
-        "Communication"
+        "Communication",
+        "Sales Techniques",
+        "Sales Training",
+        "Sales Management",
+        "Sales Leadership",
+        "Sales Development",
+        "Sales Operations"
       ]
     }
   ],
