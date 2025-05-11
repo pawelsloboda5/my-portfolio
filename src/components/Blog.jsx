@@ -27,7 +27,7 @@ function Blog() {
               <h3 className="text-xl font-semibold mb-1">{post.title}</h3>
               <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">{post.date} • {post.readTime} min read</p>
               <p className="text-sm text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">{post.excerpt}</p>
-              <Link to={`/blog/${post.slug}`} className="inline-block mt-auto text-indigo-600 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 font-medium transition-colors">Read more →</Link>
+              <Link to={`/blog/${post.slug}`} className="inline-block mt-auto text-indigo-400 dark:text-indigo-300 group-hover:text-indigo-200 font-medium transition-colors">Read more →</Link>
             </motion.article>
           ))}
         </div>

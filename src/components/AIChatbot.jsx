@@ -176,7 +176,7 @@ const AIChatbot = () => {
             <p className={`text-xs text-gray-600 dark:text-gray-300 mt-1 ${isMobile ? 'text-center' : ''}`}>
               Ask if he's a good fit for your job or solution!
             </p>
-            <p className={`text-xs text-blue-600 dark:text-blue-400 font-semibold mt-2 ${isMobile ? 'text-center' : ''}`}>
+            <p className={`text-xs text-blue-300 dark:text-blue-200 font-semibold mt-2 ${isMobile ? 'text-center' : ''}`}>
               Click me to start chatting!
             </p>
             {/* Speech bubble tail (only show on desktop) */}

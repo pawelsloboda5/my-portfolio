@@ -13,13 +13,13 @@ function Contact() {
         </div>
         {/* Social Media Links */}
         <div className="flex justify-center space-x-6 text-3xl">
-          <a href="https://www.linkedin.com/in/pawel-sloboda-383181216/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+          <a href="https://www.linkedin.com/in/pawel-sloboda-383181216/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500" aria-label="LinkedIn profile">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/pawelsloboda5" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700">
+          <a href="https://github.com/pawelsloboda5" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700" aria-label="GitHub profile">
             <FaGithub />
           </a>
-          <a href="mailto:youremail@example.com" className="hover:text-red-500">
+          <a href="mailto:youremail@example.com" className="hover:text-red-500" aria-label="Send email">
             <FaEnvelope />
           </a>
         </div>

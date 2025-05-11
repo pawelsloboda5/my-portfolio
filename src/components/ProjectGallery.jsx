@@ -169,7 +169,10 @@ function ProjectGallery() {
               <div className="overflow-hidden rounded-lg aspect-video bg-gray-900">
                 <img 
                   src={project.image} 
+                  srcSet={`${project.image.replace(/\.(png|jpg|jpeg)$/, '.webp')} 1x, ${project.image} 2x`}
                   alt={project.title}
+                  width="640"
+                  height="360"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   loading="lazy"
                 />

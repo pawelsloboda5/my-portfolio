@@ -1,0 +1,15 @@
+- [x] Lazy-load AIChatbot component in App.jsx to reduce main bundle size
+- [x] Lazy-load HeroBackground & StarsBackground with IntersectionObserver (defer three.js)
+- [x] Lazy-load below-the-fold sections (Projects, Experience, Blog, etc.)
+- [x] Add explicit width & height, srcSet, and convert heavy images to WebP/AVIF
+- [x] Preload hero background image in index.html
+- [x] Fix colour contrast for chat tooltip & "Read more →" links (meet 4.5:1)
+- [x] Add aria-label to Contact social-icon links
+- [x] Remove aria-label/text mismatch in Hero CTA buttons
+- [x] Add title attribute to external iframe (Teal Job Tracker)
+- [x] Install & integrate react-helmet-async; per-route <title> and meta description
+- [x] Add canonical link tags
+- [x] Inject JSON-LD structured data (Person & BlogPosting)
+- [x] Generate & publish sitemap.xml during build
+- [x] Enable/verify CSS code splitting in Vite config
+- [x] Lazy-load OpenAI SDK only after first chat interaction (not imported on initial load) 

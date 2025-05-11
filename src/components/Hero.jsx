@@ -13,6 +13,8 @@ function Hero() {
       <div className="absolute inset-0 -z-10 w-full h-full">
         <img 
           src={meteorGifPath} 
+          width="1920"
+          height="1080"
           alt="Meteor shower background" 
           className="w-full h-full object-cover opacity-80"
         />
@@ -50,7 +52,6 @@ function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-blue-600 font-semibold py-2 px-6 rounded-full shadow hover:bg-gray-100 transition-colors text-sm"
-                aria-label="View my resume"
               >
                 View Resume
               </a>
@@ -59,7 +60,6 @@ function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow hover:bg-blue-500 transition-colors text-sm"
-                aria-label="Visit my LinkedIn profile"
               >
                 View LinkedIn
               </a>

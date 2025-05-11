@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { blogPosts } from './blogPosts';
 import ReactMarkdown from 'react-markdown';
+import { Helmet } from 'react-helmet-async';
 
 function BlogPost() {
   const { slug } = useParams();
@@ -39,6 +40,23 @@ function BlogPost() {
 
   return (
     <>
+      <Helmet>
+        <title>{post.title} | Pawel Sloboda Blog</title>
+        <meta name="description" content={post.excerpt} />
+        <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : `https://www.pstech.website/blog/${post.slug}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: post.title,
+          datePublished: post.date,
+          author: {
+            '@type': 'Person',
+            name: 'Pawel Sloboda'
+          },
+          url: `https://www.pstech.website/blog/${post.slug}`
+        })}</script>
+      </Helmet>
+
       {/* Reading progress bar */}
       <div className="fixed top-0 left-0 h-1 bg-indigo-600 z-50" style={{ width: `${progress}%` }} />
 

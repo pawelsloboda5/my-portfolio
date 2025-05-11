@@ -14,7 +14,10 @@ function About() {
             <div className="w-64 h-64 mx-auto overflow-hidden rounded-full">
               <img 
                 src={adobe_photo_professional_1}
-                alt="Your Name" 
+                srcSet={`${adobe_photo_professional_1.replace(/\.png$/, '.webp')} 1x, ${adobe_photo_professional_1} 2x`}
+                width="256"
+                height="256"
+                alt="Your portrait"
                 className="w-full h-full object-cover object-center"
                 style={{ objectPosition: '50% 30%' }} // fine-tune the focus
               />
