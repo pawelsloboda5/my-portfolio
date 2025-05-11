@@ -11,7 +11,7 @@ function About() {
         <div className="flex flex-col md:flex-row items-center">
           {/* Image or Illustration */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <div className="w-64 h-64 mx-auto overflow-hidden rounded-full">
+            <div className="w-512 h-512 mx-auto overflow-hidden rounded-full">
               <img 
                 src={adobe_photo_professional_1}
                 width="512"
