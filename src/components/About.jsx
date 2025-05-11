@@ -11,11 +11,11 @@ function About() {
         <div className="flex flex-col md:flex-row items-center">
           {/* Image or Illustration */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <div className="w-256 h-256 mx-auto overflow-hidden rounded-full">
+            <div className="w-128 h-128 mx-auto overflow-hidden rounded-full">
               <img 
                 src={adobe_photo_professional_1}
-                width="256"
-                height="256"
+                width="128"
+                height="128"
                 alt="Your portrait"
                 className="w-full h-full object-cover object-center"
                 style={{ objectPosition: '50% 30%' }} // fine-tune the focus
