@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import './index.css';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(

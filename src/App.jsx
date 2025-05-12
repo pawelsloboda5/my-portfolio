@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import LazyLoad from './components/LazyLoad';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const AIChatbot = lazy(() => import('./components/AIChatbot'));
 
@@ -47,6 +48,7 @@ function App() {
         <LazyLoad loader={() => import('./components/Blog')} />
         <Contact />
         <Analytics />
+        <SpeedInsights />
       </main>
       <Footer />
     </div>
