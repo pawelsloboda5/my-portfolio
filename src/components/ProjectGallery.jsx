@@ -13,7 +13,7 @@ import model1 from '../assets/model1.jpg';
 import apicus1 from '../assets/apicus-1-ss.png';
 import sie1 from '../assets/sie-wellness-1.png';
 import castleidle from '../assets/castleidle.png';
-import calworks1 from '../assets/calworks-1.png';
+import calworks1 from '../assets/calWorks-1.png';
 
 // Custom Arrow Components
 function NextArrow(props) {
