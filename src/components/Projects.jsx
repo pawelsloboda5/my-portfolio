@@ -23,9 +23,9 @@ import castleidle from '../assets/castleidle.png';
 import idlewalk from '../assets/idlewalk.png';
 import warriors1 from '../assets/warriorsbattle1.png';
 import warriors2 from '../assets/warriorsbattle2.png';
-import calworks1 from '../assets/calworks-1.png';
-import calworks2 from '../assets/calworks-2.png';
-import calworks3 from '../assets/calworks-3.png';
+import calworks1 from '../assets/calWorks-1.png';
+import calworks2 from '../assets/calWorks-2.png';
+import calworks3 from '../assets/calWorks-3.png';
 
 function Projects() {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);
