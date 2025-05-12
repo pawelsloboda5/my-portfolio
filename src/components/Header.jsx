@@ -12,13 +12,13 @@ function Header() {
     <header className="fixed top-0 left-0 right-0 backdrop-blur-md bg-white/70 dark:bg-gray-900/70 shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo or Name */}
-        <div className="text-xl font-bold">
+        <div className="text-xl font-bold text-gray-800 dark:text-white">
           <a href="#hero">Pawel Sloboda</a>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-4 text-gray-700 dark:text-gray-200">
             <li><a href="#about" className="hover:underline">About</a></li>
             <li><a href="#skills" className="hover:underline">Skills</a></li>
             <li><a href="#projects" className="hover:underline">Projects</a></li>
@@ -72,7 +72,7 @@ function Header() {
       {/* Mobile Navigation Menu */}
       {menuOpen && (
         <nav className="md:hidden bg-white dark:bg-gray-900">
-          <ul className="flex flex-col items-center space-y-4 py-4">
+          <ul className="flex flex-col items-center space-y-4 py-4 text-gray-700 dark:text-gray-200">
             <li>
               <a href="#about" className="hover:underline" onClick={() => setMenuOpen(false)}>About</a>
             </li>

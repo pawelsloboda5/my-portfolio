@@ -47,7 +47,7 @@ function ExperienceItem({ exp, index, isActive, toggleOpen, isMobile }) {
             <p className="text-sm text-gray-500 dark:text-gray-400">
               {exp.company}
             </p>
-            <p className="text-xs text-gray-400 dark:text-gray-500">
+            <p className="text-xs text-gray-600 dark:text-gray-400">
               {exp.duration}
             </p>
           </div>

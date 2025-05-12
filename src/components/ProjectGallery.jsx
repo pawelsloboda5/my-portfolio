@@ -6,14 +6,14 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // Import the same project images used in Projects.jsx
-import mvp1_image1 from '../assets/mvp1_image1.png';
+import mvp1_image1 from '../assets/mvp1-image1.png';
 import landing_image1 from '../assets/uiVs1.png';
 import mvp2_image1 from '../assets/mvp2_image1.png';
 import model1 from '../assets/model1.jpg';
 import apicus1 from '../assets/apicus-1-ss.png';
 import sie1 from '../assets/sie-wellness-1.png';
 import castleidle from '../assets/castleidle.png';
-import calworks1 from '../assets/calworks1.png';
+import calworks1 from '../assets/calworks-1.png';
 
 // Custom Arrow Components
 function NextArrow(props) {

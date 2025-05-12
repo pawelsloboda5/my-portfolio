@@ -23,8 +23,8 @@ function OldGamesGallery() {
           <figure key={idx} className="rounded-lg overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-800">
             <img src={game.src} alt={game.title} className="w-full h-48 object-cover" loading="lazy" />
             <figcaption className="p-4 text-center">
-              <h4 className="font-semibold">{game.title}</h4>
-              <p className="text-sm text-gray-500 dark:text-gray-400">{game.description}</p>
+              <h4 className="font-semibold text-gray-800 dark:text-gray-100">{game.title}</h4>
+              <p className="text-sm text-gray-600 dark:text-gray-300">{game.description}</p>
             </figcaption>
           </figure>
         ))}

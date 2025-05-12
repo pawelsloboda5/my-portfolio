@@ -2,9 +2,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useInView } from 'framer-motion';
 import ProjectCard from './ProjectCard';
-import mvp1_image1 from '../assets/mvp1_image1.png';
-import mvp1_image2 from '../assets/mvp1_image2.png';
-import mvp1_image3 from '../assets/mvp1_image3.png';
+import mvp1_image1 from '../assets/mvp1-image1.png';
+import mvp1_image2 from '../assets/mvp1-image2.png';
+import mvp1_image3 from '../assets/mvp1-image3.png';
 import landing_image1 from '../assets/uiVs1.png';
 import landing_image2 from '../assets/uiVs2.png';
 import landing_image3 from '../assets/uiVs3.png';
@@ -23,9 +23,9 @@ import castleidle from '../assets/castleidle.png';
 import idlewalk from '../assets/idlewalk.png';
 import warriors1 from '../assets/warriorsbattle1.png';
 import warriors2 from '../assets/warriorsbattle2.png';
-import calworks1 from '../assets/calworks1.png';
-import calworks2 from '../assets/calworks2.png';
-import calworks3 from '../assets/calworks3.png';
+import calworks1 from '../assets/calworks-1.png';
+import calworks2 from '../assets/calworks-2.png';
+import calworks3 from '../assets/calworks-3.png';
 
 function Projects() {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);

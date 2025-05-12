@@ -1,6 +1,6 @@
 // src/components/About.jsx
 import React from 'react';
-import adobe_photo_professional_1 from '../assets/adobe_photo_professional_1.png';
+import adobe_photo_professional_1 from '../assets/adobe-photo-professional-1.png';
 import aiData from '../data/aiBotData.json';
 
 function About() {
