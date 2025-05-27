@@ -144,7 +144,7 @@ function Projects() {
 - Designed front‑end visualizer allowing users to describe a workflow and instantly generate automation flows.
 - Integrated ROI calculator to quantify automation impact and boost engagement 60%.`,
       images: [apicus1, apicus2, apicus3],
-      projectUrl: 'https://apicus.ai',
+      projectUrl: 'https://apicus.vercel.app/',
       githubUrl: '#',
     },
     {
